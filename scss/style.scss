@@ -1,3 +1,4 @@
+
 /* БАЗОВАЯ СТИЛИЗАЦИЯ */
 
 /* open-sans-300 - latin */
@@ -93,23 +94,26 @@ nav {
 
 .topnav {
 	margin-top: 3px;
+
+    a {
+        color: #fff;
+	    text-align: center;
+	    padding: 12px 16px;
+	    font-size: 14px;
+	    font-weight: bold;
+    }
 }
 
-.topnav a {
-	color: #fff;
-	text-align: center;
-	padding: 12px 16px;
-	font-size: 14px;
-	font-weight: bold;
-}
+
 
 #myTopnav a {
 	transition: all 0.2s ease;
+
+    &:hover {
+        border-bottom: 3px solid #fcac45;
+    }
 }
 
-#myTopnav a:hover {
-	border-bottom: 3px solid #fcac45;
-}
 
 .topnav .icon {
 	display: none;
@@ -180,21 +184,19 @@ main {
 	background: #15002a;
 	text-align: center;
 	padding: 200px 0 410px 0;
-}
+    p {
+        color: #999;
+	    font-size: 20px;
+        >span {
+            font-weight: bold;
+        }
+    }
 
-.main-welcome p {
-	color: #999;
-	font-size: 20px;
-}
-
-.main-welcome p > span {
-	font-weight: bold;
-}
-
-.main-welcome h2 {
-	color: #999;
-	font-size: 44px;
-	font-weight: 300;
+    h2 {
+        color: #999;
+	    font-size: 44px;
+	    font-weight: 300;
+    }
 }
 
 .mycompany {
